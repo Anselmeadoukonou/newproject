@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    opacity: 0.9;
+}
+#debut{
+    width: 25%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right:solid;
+    display: block;
+}
+nav{
+    height: auto;
+}
+nav ul{
+    height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+#liste{
+    justify-items: center;
+}
+.liste1{
+    padding: 10px 10px 10px 30px;
+    font-size: 18px;
+    border-bottom: 1px solid ;
+    border-top: 1px solid   ;
+}
+
+#contenu{
+    width: 70%;
+    padding-left: 4%;
+    padding-top: 4%;
+    position: absolute;
+    left: 25%;
+    top: 2%;
+}
+h2{
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 14px;
+    font-size: 25px;
+}
+p{
+    line-height: 24px;
+    font-size: 16px;
+}
+#contenu div ul li{
+    margin-left: 50px;
+    line-height: 24px;
+}
+
+code p{
+    width: 75%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(192, 187, 187);
+    color: crimson;
+    margin-left: 10%;
+    font-size: 15px;
+    padding: 8px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(11, 11, 240);
+}
+
+@media screen and (min-width:300px) and (max-width:800px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    #debut{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        border-right:none;
+        display: block;
+        z-index: 1;
+        background-color: white;
+        
+    }
+    nav{
+        height: auto;
+    }
+    nav ul{
+        height: 125px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .liste1{
+        text-align: center;
+    }
+    #contenu{
+        width: 100%;
+        padding-left: 4%;
+        padding-top: 4%;
+        position: absolute;
+        left: 0%;
+        top: 40%;
+        clear: both;
+    }
+}
